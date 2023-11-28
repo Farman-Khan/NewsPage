@@ -17,3 +17,8 @@ object Dependencies {
     val composeUiTooling by lazy {"androidx.compose.ui:ui-tooling"}
     val uiTestManifest by lazy {"androidx.compose.ui:ui-test-manifest"}
 }
+
+object Modules {
+
+    const val utilities = ":utilities"
+}
