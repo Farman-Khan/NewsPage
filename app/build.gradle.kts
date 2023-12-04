@@ -1,6 +1,10 @@
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -69,4 +73,13 @@ dependencies {
 
     //utilities module
     implementation(project(Modules.utilities))
+
+    implementation(Dependencies.hiltAndroid)
+    kapt(Dependencies.kapt)
+
+}
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
 }

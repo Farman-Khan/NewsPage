@@ -16,9 +16,11 @@ object Dependencies {
     val uiTest by lazy {"androidx.compose.ui:ui-test-junit4"}
     val composeUiTooling by lazy {"androidx.compose.ui:ui-tooling"}
     val uiTestManifest by lazy {"androidx.compose.ui:ui-test-manifest"}
+
+    val hiltAndroid by lazy {"com.google.dagger:hilt-android:${Versions.hilt}"}
+    val kapt by lazy {"com.google.dagger:hilt-android-compiler:${Versions.hilt}"}
 }
 
 object Modules {
-
     const val utilities = ":utilities"
 }
