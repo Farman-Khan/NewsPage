@@ -11,10 +11,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.fkhan.newspage.ui.theme.NewsPageTheme
+import com.fkhan.utilities.CoreUtil
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val isConnected = CoreUtil.isConnected(applicationContext)
+        println("Panda: Is connected to internet? $isConnected")
+
         setContent {
             NewsPageTheme {
                 // A surface container using the 'background' color from the theme
