@@ -77,6 +77,8 @@ dependencies {
     implementation(Dependencies.hiltAndroid)
     kapt(Dependencies.kapt)
 
+    implementation(Dependencies.hiltNavigationCompose)
+
 }
 
 // Allow references to generated code

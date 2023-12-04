@@ -7,4 +7,6 @@ object Versions {
     const val junitExt = "1.1.5"
     const val espresso = "3.5.1"
     const val hilt = "2.44"
+    const val hiltNavigationCompose  = "1.0.0"
+
 }

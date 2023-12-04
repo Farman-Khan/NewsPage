@@ -1,6 +1,3 @@
-import org.gradle.api.artifacts.dsl.DependencyHandler
-import org.gradle.kotlin.dsl.support.delegates.DependencyHandlerDelegate
-
 object Dependencies {
     val corKtx by lazy {"androidx.core:core-ktx:${Versions.coreKtx}"}
     val livecycleRuntimeKtx by lazy {"androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntimeKtx}"}
@@ -19,6 +16,8 @@ object Dependencies {
 
     val hiltAndroid by lazy {"com.google.dagger:hilt-android:${Versions.hilt}"}
     val kapt by lazy {"com.google.dagger:hilt-android-compiler:${Versions.hilt}"}
+
+    val hiltNavigationCompose by lazy {"androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}"}
 }
 
 object Modules {
